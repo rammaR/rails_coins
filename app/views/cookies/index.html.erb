@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Cookies</h1>
+
+<div id="cookies">
+  <% @cookies.each do |cooky| %>
+    <%= render cooky %>
+    <p>
+      <%= link_to "Show this cookie", cooky %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New cookie", new_cooky_path %>

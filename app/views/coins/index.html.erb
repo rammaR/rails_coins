@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Coins</h1>
+
+<div id="coins">
+  <% @coins.each do |coin| %>
+    <%= render coin %>
+    <ul>
+      <li> <%= link_to "Show this coin", coin_path(coin) %> </li>
+      <li> <%= link_to "Edit this coin", edit_coin_path(coin) %> </li>
+      <li> <%= link_to "Apagar", coin, method: :delete, data:{confirm: 'Tem certeza?'} %> </li>
+    </ul>
+  <% end %>
+</div>
+
+<%= link_to "New coin", new_coin_path %>

@@ -1,0 +1,12 @@
+<%= form_with(model: book) do |form| %>
+
+    <div>
+        <%= form.label :name, "Nome do livro: " %>
+        <%= form.text_field :name %>
+    </div>
+
+    <div>
+        <%= form.submit %>
+    </div>
+
+<% end %>

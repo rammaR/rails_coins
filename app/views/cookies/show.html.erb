@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @cooky %>
+
+<div>
+  <%= link_to "Edit this cookie", edit_cooky_path(@cooky) %> |
+  <%= link_to "Back to cookies", cookies_path %>
+
+  <%= button_to "Destroy this cookie", @cooky, method: :delete %>
+</div>

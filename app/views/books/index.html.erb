@@ -1,0 +1,19 @@
+<h1>
+  Books
+</h1>
+
+<table>
+
+    <% @books.each do |book| %>
+        <tr>
+            <td><%= book.name %></td>
+        </tr>
+    <% end %>
+
+</table>
+
+<nav>
+    <ul>
+        <li>
+            <%= link_to "Cadastrar novo livro", new_book_path %>
+        </li>
